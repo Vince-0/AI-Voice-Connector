@@ -14,28 +14,35 @@ Enabling a voice call to communicate with your AI is nice.
 
 ## How
 
-## Requires
+## 1.Requirements
 Public IP addressed virtual manchine works best.
+
 Linux OS. I used Debian 12.
 
-Log in via SSH and prepare the OS:
+Log in via SSH and prepare the OS
 
 ### Security
 Refer to my [security basics](https://github.com/Vince-0/Security-Basics) notes for a new Linux server.
 
 Pay attention to the firewall section because having an open SIP port on the Internet is a very bad idea.
 
-### Download
+
+
+### 2.Download
 
 `git clone https://github.com/OpenSIPS/opensips-ai-voice-connector-ce.git
 cd opensips-ai-voice-connector-ce/docker`
 
-### Edit the .env file and adjust the settings accordingly
+### 3. Configure
+Edit the .env file and adjust the settings accordingly
 
-### Alternatively, create a configuration file
+Alternatively, create a configuration file
 
-### Run
+### 3.Run
 docker compose up
+
+### 4. Test
+
 
 ## To Do
 
