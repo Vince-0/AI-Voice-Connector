@@ -51,4 +51,4 @@ docker compose up
 -
 
 ## Reference Links
-[AI Voice Connector - Community Edition - Getting Started]([https://github.com/OpenSIPS/opensips-ai-voice-connector-ce](https://github.com/OpenSIPS/opensips-ai-voice-connector-ce/blob/main/docs/getting-started.md))
+[AI Voice Connector - Community Edition - Getting Started](https://github.com/OpenSIPS/opensips-ai-voice-connector-ce)
