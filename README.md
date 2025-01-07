@@ -26,6 +26,12 @@ Refer to my [security basics](https://github.com/Vince-0/Security-Basics) notes 
 
 Pay attention to the firewall section because having an open SIP port on the Internet is a very bad idea.
 
+Allow your client IP and block all others to port 5060
+
+`iptables -A INPUT -s [IP-GOES-HERE] -j ACCEPT`
+
+`iptables -A INPUT -p udp --destination-port 5060 -j DROP`
+
 
 
 ### 2.Download
