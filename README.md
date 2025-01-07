@@ -46,11 +46,12 @@ Allow your client IP and block all others to port 5060
 ### 2.Download
 Get the OpenSIPS AI Voice Connector code from the repository using git
 
-`git clone https://github.com/OpenSIPS/opensips-ai-voice-connector-ce.git
-cd opensips-ai-voice-connector-ce/docker`
+`git clone https://github.com/OpenSIPS/opensips-ai-voice-connector-ce.git`
 
 ### 3. Configure
 Edit the .env file and adjust the settings accordingly. I couldnt get the config file to work
+
+`cd opensips-ai-voice-connector-ce/docker`
 
 ```
 DEEPGRAM_API_KEY=xxxxxxxxxxxxxxxx
