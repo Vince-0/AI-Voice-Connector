@@ -18,16 +18,18 @@ Enabling a voice call to communicate with your AI is nice.
 
 [Deepgram](https://console.deepgram.com/) - comes with $200 credit.
 
-[OpenAI](https://platform.openai.com/) - purchase at $5 credit.
+[OpenAI](https://platform.openai.com/) - purchase $5 credit.
 
 A softphone [MicroSIP](https://www.microsip.org/downloads/?file) to call the OpenSIPS service.
 
 A public IP addressed virtual manchine works best with a Linux OS. I used Debian 12. Log in via SSH and use root to prepare the OS.
 
 Git
+
 `apt get install git`
 
 Docker
+
 `curl -sSL https://get.docker.com/ | sudo sh`
 
 ### Security
@@ -65,7 +67,6 @@ I had audio issues until I specified the RTP_IP.
 
 `docker compose pull`
 
-
 ### 3.Run
 
 `docker compose up`
@@ -80,7 +81,7 @@ Ctrl-c will stop the services.
 
 ### 4. Test
 
-I configured an account to use my servers' DNS name as the SIP Server and Proxy with no password, a random user and kept G.711 A-law and u-law codecs enabled.
+I configured a softphone account to use my servers' DNS name as the SIP Server and Proxy with no password, a random user and kept G.711 A-law and u-law codecs enabled.
 
 Called openai from the dialpad:
 ---
@@ -103,6 +104,8 @@ Engine: Well, I'm here to make things easier, whether it's answering questions, 
 Speaker: Oh nothing, that'll be all. Please hang up.
 
 Engine: Alright! Take care, and feel free to reach out anytime. Goodbye!
+
+The call did hang up correctly.
 
 <details>
 <summary>OpenAI log</summary>
@@ -293,6 +296,9 @@ Assistant: Alright, no problem. If you need anything else in the future, feel fr
 Speaker: Alright.
 
 Assistant: Take care!
+
+The call did not hang up.
+
 
 <details>
 <summary>OpenAI log</summary>
