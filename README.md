@@ -1,5 +1,5 @@
 # AI Voice Connector
-## Connect VOIP SIP calls to a conversational AI
+## Connect VOIP SIP calls using OpenSIPS to a conversational AI provider like Deepgram and OpenAI
 
 Author [https://github.com/Vince-0](https://github.com/Vince-0/Projects)
 
