@@ -351,8 +351,9 @@ This short conversation cost about $0.04. and used Deepgram's Speech-to-Text API
 ---
 
 ## To Do
+- Security concerns
 - Compare Deepgram to OpenAI flavours for conversation quality, cost, options tweaking.
-- Connect a custom provider
+- Connect a custom AI provider
 - Outline a production use case
 
 ## Reference Links
