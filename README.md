@@ -9,7 +9,7 @@ My notes for [OpenSIPS'](https://opensips.org/) [AI Voice Connector - Community 
 Enabling a voice call to communicate with your AI is nice.
 
 <p align="center">
-<img src="" />
+<img src="https://github.com/Vince-0/AI-Voice-Connector/blob/740a2b46a9db2c0c00f61886f9bb6d4db5b76c60/pics/AIConnector3.png" />
 </p>
 
 ## How
@@ -84,8 +84,11 @@ Ctrl-c will stop the services.
 
 I configured a softphone account to use my servers' DNS name as the SIP Server and Proxy with no password, a random user and kept G.711 A-law and u-law codecs enabled.
 
-Called openai from the dialpad:
 ---
+OpenAI [implementation](https://github.com/OpenSIPS/opensips-ai-voice-connector-ce/blob/addad5c94dd1a96bbdadbb565a4630657cb679ae/docs/ai/openai.md): uses OpenAI Real-Time Speech-to-Speech engine
+---
+Called openai from the dialpad:
+
 Engine: Loud and clear! How can I help you today?
 
 Speaker: Testing 1 2 3
@@ -274,10 +277,13 @@ OpenAI usage graph
 <img src="https://github.com/Vince-0/AI-Voice-Connector/blob/844a9f72e7e76ecec938903c650232cee588c43d/pics/openai1.png" />
 </p>
 
-This short conversation cost $0.13 cents.
+This short conversation cost $0.13 cents and used the OpenAI Speech-to-Speech API for real-time interpretation and response generation, streamlining interactions without intermediate steps. This should make for a more fluid conversation user experience.
 
-Called deepgram from the dialpad:
 ---
+Deepgram [implementation](https://github.com/OpenSIPS/opensips-ai-voice-connector-ce/blob/addad5c94dd1a96bbdadbb565a4630657cb679ae/docs/ai/deepgram.md): convert to text using Deepgram Speech-to-Text, push transcribe to OpenAI and then push the response back to Deepgram Text-to-Speech engine
+---
+Called deepgram from the dialpad:
+
 Speaker: Testing. One, two, three.
 
 Assistant: Loud and clear! How can I assist you today?
@@ -340,7 +346,9 @@ ai-voice-connector-engine    | 2025-01-07 11:18:21,857 - tid: 140019193558848 - 
 
 Although that was more than this test which was 1 /listen and 5 /speak endpoint calls.
 
-This short conversation cost about $0.04.
+This short conversation cost about $0.04. and used Deepgram's Speech-to-Text API to transcribe the SIP user's spoken input into text. This transcription is then sent to the ChatGPT API, which interprets the message and generates a response. The response text is subsequently passed back to Deepgram's Text-to-Speech API, which converts it into voice format, allowing the response to be played back to the user.
+
+---
 
 ## To Do
 
@@ -350,4 +358,5 @@ This short conversation cost about $0.04.
 
 ## Reference Links
 [AI Voice Connector - Community Edition - Getting Started](https://github.com/OpenSIPS/opensips-ai-voice-connector-ce)
+
 [AI Voice Connector Implementation](https://github.com/OpenSIPS/opensips-ai-voice-connector-ce/blob/main/docs/implementation.md)
