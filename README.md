@@ -351,10 +351,9 @@ This short conversation cost about $0.04. and used Deepgram's Speech-to-Text API
 ---
 
 ## To Do
-
--
--
--
+- Compare Deepgram to OpenAI flavours for conversation quality, cost, options tweaking.
+- Connect a custom provider
+- Outline a production use case
 
 ## Reference Links
 [AI Voice Connector - Community Edition - Getting Started](https://github.com/OpenSIPS/opensips-ai-voice-connector-ce)
