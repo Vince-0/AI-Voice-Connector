@@ -1,9 +1,7 @@
-# AI Voice Connector
-## Connect VOIP SIP calls using OpenSIPS to a conversational AI provider like Deepgram and OpenAI
+# VOIP Conversational AI
+Connect VOIP phone calls using [OpenSIPS'](https://opensips.org/) [AI Voice Connector - Community Edition](https://github.com/OpenSIPS/opensips-ai-voice-connector-ce) to a conversational AI provider like Deepgram and OpenAI.
 
 Author [https://github.com/Vince-0](https://github.com/Vince-0/Projects)
-
-My notes for [OpenSIPS'](https://opensips.org/) [AI Voice Connector - Community Edition](https://github.com/OpenSIPS/opensips-ai-voice-connector-ce)
 
 ## Why
 Enabling a voice call to communicate with your AI is nice.
