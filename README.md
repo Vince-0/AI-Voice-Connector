@@ -3,6 +3,8 @@ Connect VOIP phone calls using [OpenSIPS'](https://opensips.org/) [AI Voice Conn
 
 Author [https://github.com/Vince-0](https://github.com/Vince-0/Projects)
 
+Use at your own risk.
+
 ## Why
 Enabling a voice call to communicate with your AI is nice.
 
