@@ -85,8 +85,12 @@ Ctrl-c will stop the services.
 I configured a softphone account to use my servers' DNS name as the SIP Server and Proxy with no password, a random user and kept G.711 A-law and u-law codecs enabled.
 
 ---
-OpenAI [implementation](https://github.com/OpenSIPS/opensips-ai-voice-connector-ce/blob/addad5c94dd1a96bbdadbb565a4630657cb679ae/docs/ai/openai.md): uses OpenAI Real-Time Speech-to-Speech engine
+OpenAI [implementation](https://github.com/OpenSIPS/opensips-ai-voice-connector-ce/blob/addad5c94dd1a96bbdadbb565a4630657cb679ae/docs/ai/openai.md): 
+
 ---
+
+### Uses OpenAI Real-Time Speech-to-Speech engine
+
 Called openai from the dialpad:
 
 Engine: Loud and clear! How can I help you today?
@@ -280,8 +284,11 @@ OpenAI usage graph
 This short conversation cost $0.13 cents and used the OpenAI Speech-to-Speech API for real-time interpretation and response generation, streamlining interactions without intermediate steps. This should make for a more fluid conversation user experience.
 
 ---
-Deepgram [implementation](https://github.com/OpenSIPS/opensips-ai-voice-connector-ce/blob/addad5c94dd1a96bbdadbb565a4630657cb679ae/docs/ai/deepgram.md): convert to text using Deepgram Speech-to-Text, push transcribe to OpenAI and then push the response back to Deepgram Text-to-Speech engine
+Deepgram [implementation](https://github.com/OpenSIPS/opensips-ai-voice-connector-ce/blob/addad5c94dd1a96bbdadbb565a4630657cb679ae/docs/ai/deepgram.md)
 ---
+
+###  Convert to text using Deepgram Speech-to-Text, push transcribe to OpenAI and then push the response back to Deepgram Text-to-Speech engine
+
 Called deepgram from the dialpad:
 
 Speaker: Testing. One, two, three.
